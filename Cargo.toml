@@ -8,5 +8,8 @@ name = "sbn"
 path = "src/main.rs"
 
 [dependencies]
-clap = { version = "4.5.35", features = ["derive"] }
-color-eyre = "0.6"
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4.5.46", features = ["derive"] }
+color-eyre = "0.6.5"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
